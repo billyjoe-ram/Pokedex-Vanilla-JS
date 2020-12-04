@@ -5,16 +5,22 @@
   <title>PokeDex</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+  <script src="./js/app.js" defer></script>
 </head>
 <body>
 
   <div class="container">
     <h1>Pokedex</h1>
-    <ul data-js="pokedex" class="pokedex">
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+    <div class="pokemons">
+      <ul data-js="pokedex" class="pokedex"></ul>
+    </div>    
       
     </ul>
   </div>
-  
-  <script src="./js/app.js"></script>
+    
 </body>
 </html>
